@@ -19,11 +19,11 @@ public class CertsTest {
     private CertsPageSteps steps;
 
     @Steps
-    CertificationServicesSteps certSteps;
+    private CertificationServicesSteps certSteps;
 
     @Test
     public void createNewCert() {
-        /*steps.openPage();
+        steps.openPage();
         steps.open_certificate_page();
         steps.open_request_tab();
         steps.add_request();
@@ -39,12 +39,11 @@ public class CertsTest {
         certSteps.read_request();
         certSteps.type_request_body();
         certSteps.click_submit_button();
-        certSteps.click_download_sertificate();*/
+        certSteps.click_download_certificate();
         steps.check_certificates_exist();
         steps.openPage();
         steps.open_certificate_page();
         steps.open_certificate_tab();
-        //steps.click_import();
         steps.input_file_name();
     }
 }

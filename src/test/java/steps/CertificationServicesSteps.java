@@ -46,7 +46,7 @@ public class CertificationServicesSteps {
     }
 
     @Step
-    public void click_download_sertificate() {
+    public void click_download_certificate() {
         page.clickDownloadLink();
     }
 }

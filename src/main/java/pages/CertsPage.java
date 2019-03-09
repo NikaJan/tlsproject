@@ -3,11 +3,7 @@ package pages;
 import org.openqa.selenium.*;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
-import org.openqa.selenium.interactions.Actions;
-
 import java.io.File;
-
-import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 @DefaultUrl("http://172.17.117.121")
 public class CertsPage extends PageObject {
