@@ -4,6 +4,8 @@ import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 import pages.CertsPage;
 
+import java.awt.*;
+
 public class CertsPageSteps {
     CertsPage page;
 

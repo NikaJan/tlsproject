@@ -41,11 +41,11 @@ public class CertsTest {
 //        certSteps.type_request_body();
 //        certSteps.click_submit_button();
 //        certSteps.click_download_sertificate();
-        steps.check_certificates_exist();
+//        steps.check_certificates_exist();
         steps.openPage();
-        steps.open_certificate_page();
-        steps.open_certificate_tab();
-        steps.click_import();
+//        steps.open_certificate_page();
+//        steps.open_certificate_tab();
+//        steps.click_import();
         steps.input_file_name();
     }
 
