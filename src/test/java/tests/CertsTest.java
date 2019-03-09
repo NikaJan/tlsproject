@@ -16,37 +16,35 @@ public class CertsTest {
     WebDriver driver;
 
     @Steps
-    CertsPageSteps steps;
+    private CertsPageSteps steps;
 
     @Steps
     CertificationServicesSteps certSteps;
 
     @Test
-    public void createNewCert(){
-//        steps.openPage();
-//        steps.open_certificate_page();
-//        steps.open_request_tab();
-//        steps.add_request();
-//        steps.select_gost();
-//        steps.type_server_name();
-//        steps.type_organization_name();
-//        steps.click_apply();
-//        steps.select_row();
-//        steps.click_export();
-//        steps.check_request_exists();
-//        certSteps.open_certificate_page();
-//        certSteps.click_request_link();
-//        certSteps.click_extended_request_link();
-//        certSteps.read_request();
-//        certSteps.type_request_body();
-//        certSteps.click_submit_button();
-//        certSteps.click_download_sertificate();
-//        steps.check_certificates_exist();
+    public void createNewCert() {
+        /*steps.openPage();
+        steps.open_certificate_page();
+        steps.open_request_tab();
+        steps.add_request();
+        steps.selectGost2012();
+        steps.type_server_name();
+        steps.type_organization_name();
+        steps.click_apply();
+        steps.select_row();
+        steps.click_export();
+        certSteps.open_certificate_page();
+        certSteps.click_request_link();
+        certSteps.click_extended_request_link();
+        certSteps.read_request();
+        certSteps.type_request_body();
+        certSteps.click_submit_button();
+        certSteps.click_download_sertificate();*/
+        steps.check_certificates_exist();
         steps.openPage();
-//        steps.open_certificate_page();
-//        steps.open_certificate_tab();
-//        steps.click_import();
+        steps.open_certificate_page();
+        steps.open_certificate_tab();
+        //steps.click_import();
         steps.input_file_name();
     }
-
 }

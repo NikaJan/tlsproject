@@ -4,70 +4,81 @@ import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 import pages.CertsPage;
 
-import java.awt.*;
-
 public class CertsPageSteps {
-    CertsPage page;
+    private CertsPage page;
 
     @Step
-    public void openPage(){
+    public void openPage() {
         page.open();
     }
 
     @Step
-    public void open_certificate_page(){
+    public void open_certificate_page() {
         page.openCertsPage();
     }
+
     @Step
-    public void open_request_tab(){
+    public void open_request_tab() {
         page.openReqsTab();
     }
+
     @Step
-    public void add_request(){
+    public void add_request() {
         page.addRequest();
     }
+
     @Step
-    public void select_gost(){
-        page.selectGost();
+    public void selectGost2012() {
+        page.selectGost2012();
     }
+
     @Step
-    public void type_server_name(){
+    public void type_server_name() {
         page.typeServerName();
     }
+
     @Step
-    public void type_organization_name(){
+    public void type_organization_name() {
         page.typeOrganizationName();
     }
+
     @Step
-    public void click_apply(){
+    public void click_apply() {
         page.clickApply();
     }
+
     @Step
-    public void select_row(){
+    public void select_row() {
         page.selectRow();
     }
+
     @Step
-    public void click_export(){
+    public void click_export() {
         page.clickExport();
     }
+
     @Step
-    public void check_request_exists(){
+    public void check_request_exists() {
         Assert.assertTrue(page.findRequest());
     }
+
     @Step
-    public void check_certificates_exist(){
+    public void check_certificates_exist() {
         Assert.assertTrue(page.findCerts());
     }
+
     @Step
-    public void open_certificate_tab(){
+    public void open_certificate_tab() {
         page.openCertsTab();
     }
+
     @Step
-    public void click_import(){
+    public void click_import() {
         page.clickImportButton();
     }
+
     @Step
-    public void input_file_name(){
+    public void input_file_name() {
         page.inputFileName();
     }
 }

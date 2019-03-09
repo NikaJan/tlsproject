@@ -15,16 +15,18 @@ public class CertificationServicesPage extends PageObject {
     private By submitButton = By.id("btnSubmit");
     private By downloadCertsLink = By.id("locDownloadCert3");
 
-    public void clickRequestLink(){
+    public void clickRequestLink() {
         find(requestLink).click();
     }
-    public void clickExtendedRequestLink(){
+
+    public void clickExtendedRequestLink() {
         find(extendedRequestLink).click();
     }
+
     public void readRequest() throws IOException {
         requestBody = "";
         {
-            FileReader file = new FileReader("C:\\Users\\Вероника\\Downloads\\req-5.p10");
+            FileReader file = new FileReader("C:\\Users\\jq\\Downloads\\req-11.p10");
             BufferedReader reader = new BufferedReader(file);
             String line = reader.readLine();
 
@@ -34,13 +36,16 @@ public class CertificationServicesPage extends PageObject {
             }
         }
     }
-    public void enterRequestBoby(){
+
+    public void enterRequestBoby() {
         find(requestInput).type(requestBody);
     }
-    public void clickSubmit(){
+
+    public void clickSubmit() {
         find(submitButton).click();
     }
-    public void clickDownloadLink(){
+
+    public void clickDownloadLink() {
         find(downloadCertsLink).waitUntilVisible().click();
     }
 }
